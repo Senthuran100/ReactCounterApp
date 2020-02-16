@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Stopwatch from './Stopwatch';
 
 class App extends Component{
  constructor(){
@@ -38,7 +39,8 @@ class App extends Component{
         <div style={{
           position: 'absolute', left: '50%', top: '50%',
           transform: 'translate(-50%, -50%)'
-      }}>
+      }}>  
+            <Stopwatch/>
             <h1>Current Count :{this.state.count}</h1>
             <button className="inc"  onClick={(e)=>this.increment(e)}>Increment!</button>
             <button  className="dec" onClick={(e)=>this.decrement(e)}>Decrement!</button>
