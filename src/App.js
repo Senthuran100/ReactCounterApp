@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Stopwatch from './Stopwatch';
+import Addition from './Addition';
 
 class App extends Component{
  constructor(){
@@ -45,7 +46,7 @@ class App extends Component{
             <button className="inc"  onClick={(e)=>this.increment(e)}>Increment!</button>
             <button  className="dec" onClick={(e)=>this.decrement(e)}>Decrement!</button>
             <button className="reset" onClick={(e)=>this.reset(e)}>Reset!</button>
-            
+            <Addition/>
         </div>
 
     );

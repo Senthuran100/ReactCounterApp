@@ -22,7 +22,7 @@ class Stopwatch extends Component{
     };
 
     handleReset = () => {
-        clearInterval(this.timer); // new
+        clearInterval(this.timer); 
         this.setState({ runningTime: 0, status: false });
     };
 
